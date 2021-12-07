@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset name="ControllerTester">
+    <file>src</file>
+    <file>tests</file>
+
+    <arg name="cache"/>
+    <arg name="colors"/>
+    <arg value="nsp"/>
+
+    <!-- Contributte Coding Standard -->
+    <rule ref="./vendor/ninjify/coding-standard/contributte.xml"/>
+    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
+        <properties>
+            <property name="rootNamespaces" type="array">
+                <element key="src" value="Adbros\Constraints"/>
+                <element key="tests" value="Adbros\Constraints\Tests"/>
+            </property>
+        </properties>
+    </rule>
+</ruleset>

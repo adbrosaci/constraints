@@ -1,0 +1,16 @@
+parameters:
+	level: max
+	paths:
+		- src
+		- tests
+	ignoreErrors:
+		-
+			message: "#^Dynamic call to static method PHPUnit\\\\Framework\\\\Assert\\:\\:assertNull\\(\\)\\.$#"
+			count: 1
+			path: tests/Cases/PhoneTest.php
+
+		-
+			message: "#^Dynamic call to static method PHPUnit\\\\Framework\\\\Assert\\:\\:assertSame\\(\\)\\.$#"
+			count: 1
+			path: tests/Cases/PhoneTest.php
+
